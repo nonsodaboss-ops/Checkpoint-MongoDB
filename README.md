@@ -1,27 +1,13 @@
 # MongoDB Checkpoint
 
 ## 📌 Project Overview
-This project demonstrates basic MongoDB operations including:
-- Creating a collection (`contactlist`)
-- Inserting multiple documents
-- Querying documents with filters
+This project serves as a checkpoint to validate understanding of CRUD operations in MongoDB.
+Screenshots have been included in this repository to showcase the step-by-step operations performed during the checkpoint:
+- Insertion of documents
+- Querying with filters
 - Updating fields
 - Deleting documents
 - Displaying results
-
-It serves as a checkpoint to validate understanding of CRUD operations in MongoDB.
-
-Screenshots have been included in this repository to showcase the step-by-step operations performed during the checkpoint:
-
-Insertion of documents
-
-Querying with filters
-
-Updating fields
-
-Deleting documents
-
-Displaying results
 
 These visuals provide clear evidence of each command executed and its outcome.
 
@@ -29,7 +15,7 @@ These visuals provide clear evidence of each command executed and its outcome.
 
 ## 🗂️ Collection: `contactlist`
 ### Sample Documents Inserted
-```json
+```
 [
     { "lastName": "Ben", "firstName": "Moris", "email": "ben@gmail.com", "age": 26 },
   { "lastName": "Kefi", "firstName": "Anis", "email": "kefi@gmail.com", "age": 15 },
