@@ -34,3 +34,47 @@ I added the following document to the `contactlist` collection:
   "firstName": "Cahli",
   "age": 19
 }
+
+🔍 Queries Demonstrated
+Insert documents
+
+js
+db.contactlist.insertMany([...])
+Find all contacts
+
+js
+db.contactlist.find().pretty()
+Find by ID
+
+js
+db.contactlist.findOne({ _id: ObjectId("PUT_THE_ID_HERE") })
+Filter by age
+
+js
+db.contactlist.find({ age: { $gt: 18 } })
+Filter by age and name containing "ah"
+
+js
+db.contactlist.find({
+  age: { $gt: 18 },
+  $or: [{ firstName: /ah/i }, { lastName: /ah/i }]
+})
+Update a contact’s first name
+
+js
+db.contactlist.updateOne(
+  { lastName: "Kefi", firstName: "Seif" },
+  { $set: { firstName: "Anis" } }
+)
+Delete contacts under age 5
+
+js
+db.contactlist.deleteMany({ age: { $lt: 5 } })
+✅ Key Learnings
+How to insert, query, update, and delete documents in MongoDB.
+
+Using operators like $gt, $lt, $or, and regex for filtering.
+
+Understanding how _id works for uniquely identifying documents.
+
+Practicing schema flexibility (some documents may not have all fields).
