@@ -11,6 +11,20 @@ This project demonstrates basic MongoDB operations including:
 
 It serves as a checkpoint to validate understanding of CRUD operations in MongoDB.
 
+Screenshots have been included in this repository to showcase the step-by-step operations performed during the checkpoint:
+
+Insertion of documents
+
+Querying with filters
+
+Updating fields
+
+Deleting documents
+
+Displaying results
+
+These visuals provide clear evidence of each command executed and its outcome.
+
 ---
 
 ## 🗂️ Collection: `contactlist`
